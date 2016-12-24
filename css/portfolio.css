@@ -1,0 +1,122 @@
+/* Nav Stuff */
+#nav_ul li a{
+  color:white;
+}
+
+.navbar-default{
+  border-color: transparent;
+  background-color: transparent;
+  position:absolute;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#nav{
+  padding-top: 10px;
+  position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 90px;
+text-align: center;
+overflow: hidden;
+z-index: 1000;
+-webkit-transition: background 0.2s ease-out;
+transition: background 0.2s ease-out;
+}
+
+#nav_ul{
+  text-align: center;
+  list-style: none;
+  margin:0 auto;
+  padding-left: 0px;
+}
+
+#nav_ul li{
+    display: inline-block;
+    font-size: 1.8em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.nav_link{
+  width:170px;
+  margin-right: 10px;
+}
+
+#nav_ul_logo{
+  padding-left: 0px;
+}
+
+#nav_ul li a:hover {
+    color: #fed136;
+    text-decoration: none;
+}
+
+.btn-xl{
+  color: #fff;
+background-color: #fed136;
+border-color: #fed136;
+border-radius: 3px;
+font-size: 18px;
+font-weight: 900;
+padding: 20px 40px;
+}
+
+/*#nav_center_div{
+  display: inline-block;
+  margin:auto;
+  text-align: center;
+}*/
+
+.navbar-custom .nav li a {
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.section{
+  height: 100vh;
+}
+
+#welcome_div{
+  background-image: url(../img/split_background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: #fff;
+  height: 100vh;
+}
+
+#greeting{
+  margin-top: 30vh;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+
+#greeting_call_to_action{
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 75px;
+  margin-bottom: 50px;
+}
+
+.grey_section{
+  background-color: #eee;
+}
