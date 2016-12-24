@@ -56,6 +56,11 @@ transition: background 0.2s ease-out;
     text-decoration: none;
 }
 
+/*#nav_ul li a:active {
+    color: #fed136;
+    text-decoration: none;
+}*/
+
 .btn-xl{
   color: #fff;
 background-color: #fed136;
@@ -119,4 +124,33 @@ padding: 20px 40px;
 
 .grey_section{
   background-color: #eee;
+}
+
+.section_header{
+  font-size: 40px;
+margin-top: 25vh;
+margin-bottom: 15px;
+font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section_subheader{
+  margin-bottom: 75px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    color: #777;
+}
+
+i{
+  color: yellow;
+}
+
+::selection {
+    text-shadow: none;
+    background: #fed136;
+}
+
+.text-primary, a {
+    color: #fed136;
 }
