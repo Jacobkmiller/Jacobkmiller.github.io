@@ -103,7 +103,7 @@ padding: 20px 40px;
   -o-background-size: cover;
   text-align: center;
   color: #fff;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #greeting{
@@ -207,4 +207,38 @@ margin: 0 auto;
 
 .portfolio_hover_content i{
   color:white;
+}
+
+.li_shift{
+    margin-right: 15%;
+}
+
+.social-buttons{
+  width: 100%;
+}
+
+#social-buttons i{
+  color: #fed136;
+}
+
+#contact_div{
+  background-image: url(../img/contact.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: #fff;
+  min-height: 100vh;
+}
+.form-control{
+  padding:30px;
+  margin-bottom: 25px;
+}
+
+#message{
+  height: 236px;
 }
