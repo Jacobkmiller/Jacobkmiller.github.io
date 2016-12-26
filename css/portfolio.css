@@ -183,11 +183,25 @@ i{
   display: block;
 position: relative;
 max-width: 400px;
+min-height: 210px;
 margin: 0 auto;
+}
+
+#portfolio_link_doc2doc{
+  background-color: #42A5F5;
+}
+
+#portfolio_link_guiltypleasures{
+  background-color: black;
+}
+
+#portfolio_item_logo_doc2doc{
+  padding-top: 20%;
 }
 
 .portfolio_caption{
   max-width: 400px;
+  min-height: 150px;
   margin: 0 auto;
   background-color: #fff;
   text-align: center;

@@ -78,6 +78,7 @@
                   <h4>Website Builders</h4>
                   <p class="text-muted">Shopify</p>
                   <p class="text-muted">Squarespace</p>
+                  <p class="text-muted">Wix</p>
               </div>
               <div class="col-md-3">
                   <span class="fa-stack fa-4x">
@@ -116,13 +117,13 @@
           </div>
           <div class="row">
               <div class="col-md-4 col-sm-6 portfolio_item">
-                  <a href="#portfolio_modal_1" class="portfolio_link" data-toggle="modal">
+                  <a id="portfolio_link_doc2doc" href="#portfolio_modal_1" class="portfolio_link" data-toggle="modal">
                       <div class="portfolio_hover">
                           <div class="portfolio_hover_content">
                               <i class="fa fa-plus fa-3x"></i>
                           </div>
                       </div>
-                      <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                      <img src="img/doc2doc/logo.png" id="portfolio_item_logo_doc2doc" class="img-responsive" alt="">
                   </a>
                   <div class="portfolio_caption">
                       <h4>Doc2Doc Rental</h4>
@@ -137,7 +138,7 @@
                               <i class="fa fa-plus fa-3x"></i>
                           </div>
                       </div>
-                      <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                      <img src="img/drone_squad/logo.jpg" class="img-responsive" alt="">
                   </a>
                   <div class="portfolio_caption">
                       <h4>Drone Squad</h4>
@@ -146,13 +147,13 @@
                   </div>
               </div>
               <div class="col-md-4 col-sm-6 portfolio_item">
-                  <a href="#portfolio_modal_3" class="portfolio_link" data-toggle="modal">
+                  <a href="#portfolio_modal_3" id="portfolio_link_guiltypleasures" class="portfolio_link" data-toggle="modal">
                       <div class="portfolio_hover">
                           <div class="portfolio_hover_content">
                               <i class="fa fa-plus fa-3x"></i>
                           </div>
                       </div>
-                      <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
+                      <img src="img/guilty_pleasures/logo.jpg" class="img-responsive" alt="">
                   </a>
                   <div class="portfolio_caption">
                       <h4>Guilty Pleasures</h4>
@@ -168,14 +169,14 @@
           <div class="row">
               <div class="col-lg-12 text-center">
                   <h2 class="section_header">About</h2>
-                  <h3 class="section_subheader text-muted">Hi I'm Jake</h3>
+                  <h3 class="section_subheader text-muted">Jake Of All Trades</h3>
               </div>
           </div>
           <div class="row">
             <div class="col-sm-6  ">
                     <h4>Jake Miller</h4>
                     <p class="text-muted">Full Stack Developer</p>
-                    <p>Environmentalist turned coder. I like clean redable effective code. </p>
+                    <p>Environmental consultant turned coder. I like clean redable effective code. </p>
                     <div id="donutchart" style="width: 100%; height: 500px;"></div>
               </div>
               <div class="col-md-6">
@@ -301,10 +302,12 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ['Task', 'percentage'],
+          ['Photographer',     5],
           ['Health Nut',     10],
-          ['Adventurer',     30],
+          ['Videographer',     15],
           ['DIYer',      20],
-          ['Mexican Food',  35],
+          ['Burrito Enthusiast',  20],
+          ['Adventurer',     30],
         ]);
 
         var options = {
@@ -316,7 +319,8 @@
             1: { color: '#fed136' },
             2: { color: '#fed136' },
             3: { color: '#fed136' },
-            4: { color: '#fed136' }
+            4: { color: '#fed136' },
+            5: { color: '#fed136' },
           }
         };
 
