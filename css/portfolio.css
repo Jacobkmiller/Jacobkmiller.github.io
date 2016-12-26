@@ -274,3 +274,38 @@ margin: 0 auto;
 #message{
   height: 236px;
 }
+
+.portfolio-modal{
+  border-radius: 0;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.modal-dialog{
+  margin: auto;
+  width: 100%;
+}
+
+.modal_contents{
+  margin: auto;
+  width: 100%;
+}
+
+.btn-primary{
+  color:white;
+  background-color: #fed136;
+  border: none;
+}
+.btn-primary:hover{
+  color:white;
+  background-color: #fed142;
+}
+
+.portfolio_image{
+  display: inline-block;
+  height: 60vh;
+}
