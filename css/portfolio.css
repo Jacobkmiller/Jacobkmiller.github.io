@@ -396,4 +396,7 @@ margin: 0 auto;
   #donutchart{
     margin-left: -75px;
   }
+  .close-modal{
+    display: none;
+  }
 }
