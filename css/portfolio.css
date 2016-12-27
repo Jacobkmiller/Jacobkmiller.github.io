@@ -1,4 +1,22 @@
 /* Nav Stuff */
+@media (min-width: 768px) {
+  #full_nav{
+    display: block;
+  }
+  #mini_nav{
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #full_nav{
+    display: none;
+  }
+  #mini_nav{
+    display: block;
+  }
+}
+
 #nav_ul li a{
   color:white;
 }
@@ -18,9 +36,10 @@
 #nav{
   padding-top: 10px;
   position: fixed;
+  width: 100vw;
 top: 0;
 left: 0;
-width: 100%;
+/*width: 100%;*/
 height: 90px;
 text-align: center;
 overflow: hidden;

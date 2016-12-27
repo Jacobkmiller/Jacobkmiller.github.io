@@ -35,9 +35,17 @@
 
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div id="mobile_container" class="container-fluid">
+
     <nav id="nav" class="navbar navbar-default navbar-fixed-top" style="text-align:center">
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="col-md-12">
+        <div id="mini_nav" class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand text-center page-scroll" style="padding-top:0px; padding-bottom:5px;" href="#page-top"><img class="img-responsive" style="max-height:100%;" src="img/JM_logo_white.png" alt="Jake Miller Developer"></a>
+        </div>
+        <div class="col-md-12" id="full_nav">
 
         <ul id="nav_ul" class="nav navbar-nav">
           <li><a class="hidden" href="#welcome_div"></a></li>
@@ -53,7 +61,7 @@
         <!-- /.navbar-collapse -->
     </nav>
     <div id="welcome_div" class="col-md-12 section">
-      <div class="container">
+      <div class="container-fluid">
           <div class="intro-text">
               <div id="greeting">Hi I'm Jake!</div>
               <div id="greeting_call_to_action">Let's Make Something Great Together</div>
@@ -62,7 +70,7 @@
       </div>
     </div>
     <div id="services_div" class="col-md-12 section">
-      <div class="container">
+      <div class="container-fluid">
           <div class="row">
               <div class="col-lg-12 text-center">
                   <h2 class="section_header">Services</h2>
@@ -152,7 +160,7 @@
       </div>
     </div>
     <div id="portfolio_div" class="col-md-12 section grey_section">
-      <div class="container">
+      <div class="container-fluid">
           <div class="row">
               <div class="col-lg-12 text-center">
                   <h2 class="section_header">Portfolio</h2>
@@ -209,7 +217,7 @@
         </div>
     </div>
     <div id="about_div" class="col-md-12 section">
-      <div class="container">
+      <div class="container-fluid">
           <div class="row">
               <div class="col-lg-12 text-center">
                   <h2 class="section_header">About</h2>
@@ -244,7 +252,7 @@
           </div>
     </div>
     <div id="contact_div" class="col-md-12 section grey_section">
-      <div class="container">
+      <div class="container-fluid">
           <div class="row">
               <div class="col-lg-12 text-center">
                   <h2 class="section_header">Contact Me</h2>
@@ -292,7 +300,7 @@
                 <div class="close-modal" data-dismiss="modal">
                     <h1>X</h1>
                 </div>
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
@@ -359,7 +367,7 @@
                 <div class="close-modal" data-dismiss="modal">
                     <h1>X</h1>
                 </div>
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
@@ -426,7 +434,7 @@
                 <div class="close-modal" data-dismiss="modal">
                     <h1>X</h1>
                 </div>
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
@@ -477,6 +485,8 @@
                 </div>
             </div>
     </div>
+  </div>
+
   </body>
 
 
