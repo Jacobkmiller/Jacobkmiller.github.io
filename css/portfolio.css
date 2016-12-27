@@ -3,6 +3,10 @@
   color:white;
 }
 
+.vertical-align-bottom{
+  vertical-align: bottom;
+}
+
 .navbar-default{
   border-color: transparent;
   background-color: transparent;
@@ -175,6 +179,14 @@ i{
     color: #fed136;
 }
 
+td{
+  padding: 4px;
+}
+
+table{
+  margin: auto;
+}
+
 .portfolio_item{
   z-index: 2;
 }
@@ -242,7 +254,7 @@ margin: 0 auto;
 }
 
 .li_shift{
-    margin-right: 15%;
+    margin-right: 10%;
 }
 
 .social-buttons{
@@ -275,24 +287,11 @@ margin: 0 auto;
   height: 236px;
 }
 
-.portfolio-modal{
-  border-radius: 0;
-  background-clip: border-box;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: none;
-  padding: 100px 0;
-  text-align: center;
+.close-modal h1 {
+  color: black;
 }
-
-.modal-dialog{
-  margin: auto;
-  width: 100%;
-}
-
-.modal_contents{
-  margin: auto;
-  width: 100%;
+.close-modal h1:hover {
+  color: yellow;
 }
 
 .btn-primary{
@@ -304,8 +303,18 @@ margin: 0 auto;
   color:white;
   background-color: #fed142;
 }
+.modal-content{
+  width: 80vw;
+  margin: auto;
+  vertical-align: middle;
+}
 
-.portfolio_image{
-  display: inline-block;
-  height: 60vh;
+.modal-body{
+  text-align: center;
+}
+
+.close-modal{
+  position: absolute;
+  top:20px;
+  right:50px;
 }
