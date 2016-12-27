@@ -1,3 +1,16 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+#mobile_container{
+  padding: 0px;
+}
+
 /* Nav Stuff */
 @media (min-width: 768px) {
   #full_nav{
