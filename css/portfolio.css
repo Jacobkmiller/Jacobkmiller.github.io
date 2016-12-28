@@ -317,6 +317,13 @@ table{
 }
 /* Contact End */
 
+/* Footer Start */
+#social_footer{
+  background-color:rgb(65, 66, 68);
+  padding: 10px;
+}
+/* Footer End */
+
 /* Modal Start */
 .close-modal h1 {
   color: black;
