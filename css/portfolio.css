@@ -1,17 +1,85 @@
+/* General */
 #mobile_container{
   padding: 0px;
 }
-
-
-/* Nav Stuff */
-
-
-#nav_ul li a{
-  color:white;
+.section{
+  min-height: 100vh;
+  padding-top: 25vh;
+  padding-bottom: 25vh;
 }
-
 .vertical-align-bottom{
   vertical-align: bottom;
+}
+.btn-primary{
+  color:white;
+  background-color: #fed136;
+  border: none;
+}
+.btn-primary:hover{
+  color:white;
+  background-color: #fed142;
+}
+.btn-md{
+  color: #fff;
+  background-color: #fed136;
+  border-color: #fed136;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 900;
+}
+.btn-xl{
+  color: #fff;
+  background-color: #fed136;
+  border-color: #fed136;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 900;
+  padding: 20px 40px;
+}
+.grey_section{
+  background-color: #eee;
+}
+
+.section_header{
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section_subheader{
+  margin-bottom: 75px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  color: #777;
+}
+
+i{
+  color: yellow;
+}
+
+::selection {
+    text-shadow: none;
+    background: #fed136;
+}
+
+.text-primary, a {
+    color: #fed136;
+}
+
+td{
+  padding: 4px;
+}
+
+table{
+  margin: auto;
+}
+
+
+/* Nav Stuff Start */
+#nav_ul li a{
+  color:white;
 }
 
 .navbar-default{
@@ -27,13 +95,13 @@
   padding-top: 10px;
   position: fixed;
   width: 100vw;
-top: 0;
-left: 0;
-text-align: center;
-overflow: hidden;
-z-index: 1000;
--webkit-transition: background 0.2s ease-out;
-transition: background 0.2s ease-out;
+  top: 0;
+  left: 0;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1000;
+  -webkit-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
 }
 
 #nav_ul{
@@ -45,16 +113,14 @@ transition: background 0.2s ease-out;
   margin-left: -4vw;
 }
 
-
-
 #nav_ul li{
-    display: inline-block;
-    font-size: 1.8em;
-    font-weight: 400;
-    letter-spacing: 2px;
-    line-height: 1em;
-    text-transform: uppercase;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  font-size: 1.8em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .nav_link{
@@ -67,8 +133,8 @@ transition: background 0.2s ease-out;
 }
 
 #nav_ul li a:hover {
-    color: #fed136;
-    text-decoration: none;
+  color: #e0bb3b;
+  text-decoration: none;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
@@ -85,52 +151,17 @@ transition: background 0.2s ease-out;
   color: white;
 }
 
-.btn-md{
-  color: #fff;
-background-color: #fed136;
-border-color: #fed136;
-border-radius: 3px;
-font-size: 18px;
-font-weight: 900;
-/*padding: 20px 40px;*/
-}
-
-/*#nav_ul li a:active {
-    color: #fed136;
-    text-decoration: none;
-}*/
-
-.btn-xl{
-  color: #fff;
-background-color: #fed136;
-border-color: #fed136;
-border-radius: 3px;
-font-size: 18px;
-font-weight: 900;
-padding: 20px 40px;
-}
-
-/*#nav_center_div{
-  display: inline-block;
-  margin:auto;
-  text-align: center;
-}*/
-
 .navbar-custom .nav li a {
-    font-weight: 400;
-    letter-spacing: 1px;
-    font-size: 16px;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #fff;
-    text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
 }
+/* Nav End */
 
-.section{
-  min-height: 100vh;
-  padding-top: 25vh;
-  padding-bottom: 25vh;
-}
-
+/* Welcome Section */
 #welcome_div{
   background-image: url(../img/split_background.jpg);
   background-repeat: no-repeat;
@@ -162,48 +193,9 @@ padding: 20px 40px;
   line-height: 75px;
   margin-bottom: 50px;
 }
+/* Welcom End */
 
-.grey_section{
-  background-color: #eee;
-}
-
-.section_header{
-  font-size: 40px;
-/*margin-top: 25vh;*/
-margin-bottom: 15px;
-font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.section_subheader{
-  margin-bottom: 75px;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    color: #777;
-}
-
-i{
-  color: yellow;
-}
-
-::selection {
-    text-shadow: none;
-    background: #fed136;
-}
-
-.text-primary, a {
-    color: #fed136;
-}
-
-td{
-  padding: 4px;
-}
-
-table{
-  margin: auto;
-}
-
+/* Portfolio Start */
 .portfolio_item{
   z-index: 2;
   margin-bottom: 20px;
@@ -212,10 +204,10 @@ table{
 .portfolio_link{
   background-color: white;
   display: block;
-position: relative;
-max-width: 400px;
-min-height: 210px;
-margin: 0 auto;
+  position: relative;
+  max-width: 400px;
+  min-height: 210px;
+  margin: 0 auto;
 }
 
 #portfolio_link_doc2doc{
@@ -283,7 +275,9 @@ margin: 0 auto;
 #social-buttons i{
   color: #fed136;
 }
+/* Portfolio End */
 
+/* Contact Start */
 #contact_div{
   background-image: url(../img/contact.jpeg);
   background-repeat: no-repeat;
@@ -296,6 +290,9 @@ margin: 0 auto;
   text-align: center;
   color: #fff;
   min-height: 100vh;
+}
+#contact_div h3{
+  color: white;
 }
 .form-control{
   padding:30px;
@@ -311,22 +308,21 @@ margin: 0 auto;
   padding-left: 0px;
   margin-top: 20px;
 }
+.text-danger{
+    color: red;
+}
+.text-danger ul{
+    list-style: none;
+    padding-left: 0px;
+}
+/* Contact End */
 
+/* Modal Start */
 .close-modal h1 {
   color: black;
 }
 .close-modal h1:hover {
   color: yellow;
-}
-
-.btn-primary{
-  color:white;
-  background-color: #fed136;
-  border: none;
-}
-.btn-primary:hover{
-  color:white;
-  background-color: #fed142;
 }
 .modal-content{
   width: 80vw;
@@ -343,6 +339,7 @@ margin: 0 auto;
   top:20px;
   right:50px;
 }
+/* Modal End */
 
 /* Responsive */
 @media (min-width: 768px) {
@@ -373,25 +370,22 @@ margin: 0 auto;
     padding: 8px;
   }
   #greeting_call_to_action{
-    font-size: 14vw !important;
-    line-height: 8vh !important;
+    font-size: 14vw;
+    line-height: 8vh;
   }
   #greeting{
-    margin-top: 0px !important;
+    margin-top: 0px;
   }
   #services_div .col-md-3{
     margin-bottom: 20px;
     margin-top: 20px;
   }
   #message{
-    height: 15vh !important;
+    height: 15vh;
   }
   .li_shift{
     margin: auto;
     margin-top: 10px;
-  }
-  #donutchart{
-    margin-left: -50px;
   }
   .close-modal{
     display: none;
@@ -414,3 +408,4 @@ margin: 0 auto;
         text-align: center;
     }
 }
+/* Responsive End */
