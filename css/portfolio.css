@@ -76,6 +76,10 @@ table{
   margin: auto;
 }
 
+.margin_auto{
+  margin:auto;
+}
+
 
 /* Nav Stuff Start */
 #nav_ul li a{
@@ -206,12 +210,16 @@ table{
   display: block;
   position: relative;
   max-width: 400px;
-  min-height: 210px;
+  height: 210px;
   margin: 0 auto;
 }
 
+#portfolio_link_desserts{
+  /*background-color: #42A5F5;*/
+}
+
 #portfolio_link_doc2doc{
-  background-color: #42A5F5;
+  /*background-color: #42A5F5;*/
 }
 
 #portfolio_link_guiltypleasures{
@@ -220,6 +228,10 @@ table{
 
 #portfolio_item_logo_doc2doc{
   padding-top: 20%;
+}
+
+#portfolio_item_logo_desserts{
+  max-height: 100%;
 }
 
 .portfolio_caption{
