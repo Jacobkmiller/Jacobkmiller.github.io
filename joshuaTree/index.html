@@ -35,6 +35,7 @@
         document.getElementById('map'), {
           center: new google.maps.LatLng(33.8734, -115.9010),
           zoom: 10,
+          gestureHandling: 'greedy',
           styles: [{
               "featureType": "all",
               "elementType": "all",
@@ -217,7 +218,7 @@
             title: destination.name
           });
 
-          marker.addListener('mouseover', function () {
+          marker.addListener('click', function () {
             infowindow.open(map, marker);
           });
           marker.addListener('mouseout', function () {
