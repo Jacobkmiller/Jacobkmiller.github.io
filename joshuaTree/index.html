@@ -26,7 +26,9 @@
 
 <body>
   <div id="map"></div>
-  <div id="legend"><h3>Legend</h3></div>
+  <div id="legend">
+    <h3>Legend</h3>
+  </div>
   <script>
     var map;
 
@@ -131,7 +133,7 @@
           address: 'Unknown',
           // checkIn: '3:00 PM Fri, Feb 7',
           checkOut: 'Fri, Feb 7',
-          image: 'https://a0.muscache.com/im/pictures/8068d220-bd41-42b7-ac1d-6b36022e6050.jpg?aki_policy=xx_large',
+          image: 'img/dakotaHaus.webp',
           // icon: 'https://static.thenounproject.com/png/5051-200.png',
         },
         // Split Rock
@@ -143,7 +145,7 @@
           address: '6627 Split Rock Ave, Twentynine Palms, CA 92277, USA',
           checkIn: '3:00 PM Fri, Feb 7',
           checkOut: '11:00 AM Mon, Feb 10',
-          image: 'https://a0.muscache.com/im/pictures/2a300323-2db5-4a0a-9f5a-44eecdbf534d.jpg?aki_policy=xx_large',
+          image: 'img/splitRock.webp',
           // icon: 'https://static.thenounproject.com/png/5051-200.png',
         },
         // Skull Rock
@@ -154,7 +156,7 @@
           description: '',
           address: 'Twentynine Palms, CA 92277',
           icon: 'https://static.thenounproject.com/png/5051-200.png',
-          image: '//live.staticflickr.com/7639/16731165548_23e5e53f59_h.jpg'
+          image: 'img/skullRock.jpeg'
         },
         // Arch Rock
         {
@@ -164,7 +166,7 @@
           description: '',
           address: '33.989785, -116.022972',
           icon: 'https://cdn3.iconfinder.com/data/icons/minimal-national-park/256/minimal_national_park_1-512.png',
-          image: '//live.staticflickr.com/5698/23712760916_24a76c45b0_h.jpg'
+          image: 'img/archRock.jpeg'
         },
         // Jumbo Rocks
         {
@@ -174,7 +176,7 @@
           description: 'Jumbo Rocks Campground',
           address: 'Twentynine Palms, CA 92277',
           icon: 'https://cdn3.iconfinder.com/data/icons/nature-life-line-art/128/rock-512.png',
-          image: '//live.staticflickr.com/3764/32841596274_3c31314638_k.jpg',
+          image: 'img/jumboRocks.jpeg',
         },
         // Barkder Dam
         {
@@ -184,18 +186,18 @@
           description: 'Dam',
           address: 'Joshua Tree Parkway, Twentynine Palms, CA 92277',
           icon: 'https://cdn2.iconfinder.com/data/icons/holidays-one/30/Lakes-512.png',
-          image: '//live.staticflickr.com/5168/5375613871_40fa35c381_b.jpg',
+          image: 'img/barkderDam.jpeg',
         },
       ];
 
 
       // Create markers.
       destinations.forEach((destination) => {
-          const contentString = `
-            <div id="content">
-              <h1 id="firstHeading" class="firstHeading">${destination.name}</h1>
+        const contentString = `
+            <div id="content" style="width: 200px;">
+              <h1 id="firstHeading" style="display:block; margin:auto; text-align:center;">${destination.name}</h1>
               <div id="bodyContent">
-                <img src="${destination.image}" style="width: 25vw; height: 25vh"></img>
+                <img src="${destination.image}" style="width: 150px; display: block; margin: auto;"></img>
                 <p>Description: ${destination.description}</p>
                 <p>${destination.checkIn ? "Check In: " + destination.checkIn : ""}</p>
                 <p>${destination.checkOut ? "Check Out: " + destination.checkOut : ""}</p>
@@ -204,26 +206,29 @@
             </div>
           `;
 
-          const infowindow = new google.maps.InfoWindow({
-            content: contentString
-          });
+        const infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
 
-          const marker = new google.maps.Marker({
-            position: destination.position,
-            icon: {
-              url: destination.icon || generalIcons[destination.type],
-              scaledSize: new google.maps.Size(50, 50),
-            },
-            map: map,
-            title: destination.name
-          });
+        const marker = new google.maps.Marker({
+          position: destination.position,
+          icon: {
+            url: destination.icon || generalIcons[destination.type],
+            scaledSize: new google.maps.Size(50, 50),
+          },
+          map: map,
+          title: destination.name
+        });
 
-          marker.addListener('click', function () {
-            infowindow.open(map, marker);
-          });
-          marker.addListener('mouseout', function () {
-            infowindow.close(map, marker);
-          });
+        marker.addListener('click', function () {
+          infowindow.open(map, marker);
+          google.maps.event.addListener(map, "click", function (event) {
+            infowindow.close()
+          })
+        })
+        // marker.addListener('mouseout', function () {
+        //   infowindow.close(map, marker);
+        // });
       });
     }
   </script>
