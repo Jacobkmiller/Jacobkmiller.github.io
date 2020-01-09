@@ -133,7 +133,7 @@
           address: 'Unknown',
           // checkIn: '3:00 PM Fri, Feb 7',
           checkOut: 'Fri, Feb 7',
-          image: 'img/dakotaHaus.webp',
+          image: 'img/dakotaHaus.jpg',
           // icon: 'https://static.thenounproject.com/png/5051-200.png',
         },
         // Split Rock
@@ -145,7 +145,7 @@
           address: '6627 Split Rock Ave, Twentynine Palms, CA 92277, USA',
           checkIn: '3:00 PM Fri, Feb 7',
           checkOut: '11:00 AM Mon, Feb 10',
-          image: 'img/splitRock.webp',
+          image: 'img/splitRock.jpg',
           // icon: 'https://static.thenounproject.com/png/5051-200.png',
         },
         // Skull Rock
@@ -194,10 +194,10 @@
       // Create markers.
       destinations.forEach((destination) => {
         const contentString = `
-            <div id="content" style="width: 200px;">
+            <div id="content" style="width: 100%; max-width: 200px;">
               <h1 id="firstHeading" style="display:block; margin:auto; text-align:center;">${destination.name}</h1>
               <div id="bodyContent">
-                <img src="${destination.image}" style="width: 150px; display: block; margin: auto;"></img>
+                <img src="${destination.image}" style="width: 80%; display: block; margin: auto;"></img>
                 <p>Description: ${destination.description}</p>
                 <p>${destination.checkIn ? "Check In: " + destination.checkIn : ""}</p>
                 <p>${destination.checkOut ? "Check Out: " + destination.checkOut : ""}</p>
