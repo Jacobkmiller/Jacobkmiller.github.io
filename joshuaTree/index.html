@@ -1,240 +1,57 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Joshua Tree</title>
+    <link rel='icon' type='image/png'
+      href='http://www.joshuatreecommunity.com/wp-content/uploads/2015/12/cropped-JTree_wo-text_1C_1.png'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+        * element that contains the map. */
+      #map {
+        height: 100%;
+      }
 
-<head>
-  <title>Joshua Tree</title>
-  <link rel="icon" type="image/png"
-    href="http://www.joshuatreecommunity.com/wp-content/uploads/2015/12/cropped-JTree_wo-text_1C_1.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <meta charset="utf-8">
-  <style>
-    /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-    #map {
-      height: 100vh;
-    }
-
-    /* Optional: Makes the sample page fill the window. */
-    html,
-    body {
-      height: 100vh;
-      margin: 0;
-      padding: 0;
-    }
-  </style>
-</head>
-
-<body>
-  <div id="map"></div>
-  <div id="legend">
-    <h3>Legend</h3>
-  </div>
-  <script>
-    var map;
-
-    function initMap() {
-      map = new google.maps.Map(
-        document.getElementById('map'), {
-          center: new google.maps.LatLng(33.8734, -115.9010),
-          zoom: 10,
-          gestureHandling: 'greedy',
-          styles: [{
-              "featureType": "all",
-              "elementType": "all",
-              "stylers": [{
-                  "hue": "#ffaa00"
-                },
-                {
-                  "saturation": "-33"
-                },
-                {
-                  "lightness": "10"
-                }
-              ]
-            },
-            {
-              "featureType": "administrative.locality",
-              "elementType": "labels.text.fill",
-              "stylers": [{
-                "color": "#9c5e18"
-              }]
-            },
-            {
-              "featureType": "landscape.natural.terrain",
-              "elementType": "geometry",
-              "stylers": [{
-                "visibility": "simplified"
-              }]
-            },
-            {
-              "featureType": "road.highway",
-              "elementType": "geometry",
-              "stylers": [{
-                "visibility": "simplified"
-              }]
-            },
-            {
-              "featureType": "road.highway",
-              "elementType": "labels.text",
-              "stylers": [{
-                "visibility": "on"
-              }]
-            },
-            {
-              "featureType": "road.arterial",
-              "elementType": "geometry",
-              "stylers": [{
-                "visibility": "simplified"
-              }]
-            },
-            {
-              "featureType": "transit.line",
-              "elementType": "all",
-              "stylers": [{
-                "visibility": "off"
-              }]
-            },
-            {
-              "featureType": "water",
-              "elementType": "geometry.fill",
-              "stylers": [{
-                  "saturation": "-23"
-                },
-                {
-                  "gamma": "2.01"
-                },
-                {
-                  "color": "#f2f6f6"
-                }
-              ]
-            },
-            {
-              "featureType": "water",
-              "elementType": "geometry.stroke",
-              "stylers": [{
-                "saturation": "-14"
-              }]
-            }
-          ]
-        }
-      );
-
-      var generalIcons = {
-        lodging: 'https://images.vexels.com/media/users/3/157343/isolated/preview/fa058a304813b6d204d29253f5cb90d4-flat-home-house-icon-by-vexels.png',
-      };
-
-      var destinations = [
-        // Dakota Haus
-        {
-          position: new google.maps.LatLng(34.206667, -116.501538),
-          type: 'lodging',
-          name: 'Dakota Haus',
-          description: '2 beds 2 baths secluded hot tub',
-          address: 'Unknown',
-          // checkIn: '3:00 PM Fri, Feb 7',
-          checkOut: 'Fri, Feb 7',
-          image: 'img/dakotaHaus.jpg',
-          // icon: 'https://static.thenounproject.com/png/5051-200.png',
-        },
-        // Split Rock
-        {
-          position: new google.maps.LatLng(34.1332342, -116.05992850000001),
-          type: 'lodging',
-          name: 'Split Rock',
-          description: 'Near Joshua Tree National Park w/ Spa',
-          address: '6627 Split Rock Ave, Twentynine Palms, CA 92277, USA',
-          checkIn: '3:00 PM Fri, Feb 7',
-          checkOut: '11:00 AM Mon, Feb 10',
-          image: 'img/splitRock.jpg',
-          // icon: 'https://static.thenounproject.com/png/5051-200.png',
-        },
-        // Skull Rock
-        {
-          position: new google.maps.LatLng(33.998075, -116.059410),
-          type: 'photography',
-          name: 'Skull Rock',
-          description: '',
-          address: 'Twentynine Palms, CA 92277',
-          icon: 'https://static.thenounproject.com/png/5051-200.png',
-          image: 'img/skullRock.jpeg'
-        },
-        // Arch Rock
-        {
-          position: new google.maps.LatLng(33.989785, -116.022972),
-          type: 'photography',
-          name: 'Arch Rock',
-          description: '',
-          address: '33.989785, -116.022972',
-          icon: 'https://cdn3.iconfinder.com/data/icons/minimal-national-park/256/minimal_national_park_1-512.png',
-          image: 'img/archRock.jpeg'
-        },
-        // Jumbo Rocks
-        {
-          position: new google.maps.LatLng(33.992029, -116.062337),
-          type: 'potography',
-          name: 'Jumbo Rocks',
-          description: 'Jumbo Rocks Campground',
-          address: 'Twentynine Palms, CA 92277',
-          icon: 'https://cdn3.iconfinder.com/data/icons/nature-life-line-art/128/rock-512.png',
-          image: 'img/jumboRocks.jpeg',
-        },
-        // Barkder Dam
-        {
-          position: new google.maps.LatLng(34.031035, -116.146322),
-          type: 'potography',
-          name: 'Barkder Dam',
-          description: 'Dam',
-          address: 'Joshua Tree Parkway, Twentynine Palms, CA 92277',
-          icon: 'https://cdn2.iconfinder.com/data/icons/holidays-one/30/Lakes-512.png',
-          image: 'img/barkderDam.jpeg',
-        },
-      ];
-
-
-      // Create markers.
-      destinations.forEach((destination) => {
-        const contentString = `
-            <div id="content" style="width: 100%; max-width: 200px;">
-              <h1 id="firstHeading" style="display:block; margin:auto; text-align:center;">${destination.name}</h1>
-              <div id="bodyContent">
-                <img src="${destination.image}" style="width: 80%; display: block; margin: auto;"></img>
-                <p>Description: ${destination.description}</p>
-                <p>${destination.checkIn ? "Check In: " + destination.checkIn : ""}</p>
-                <p>${destination.checkOut ? "Check Out: " + destination.checkOut : ""}</p>
-                <p>Address: ${destination.address}</p>
-              </div>
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Joshua Tree</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul id='nav-ul' class="navbar-nav">
+          <!-- <li class="nav-item active">
+            <a class="nav-link" href="#">All <span class="sr-only">(current)</span></a>
+          </li> -->
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
             </div>
-          `;
-
-        const infowindow = new google.maps.InfoWindow({
-          content: contentString
-        });
-
-        const marker = new google.maps.Marker({
-          position: destination.position,
-          icon: {
-            url: destination.icon || generalIcons[destination.type],
-            scaledSize: new google.maps.Size(50, 50),
-          },
-          map: map,
-          title: destination.name
-        });
-
-        marker.addListener('click', function () {
-          infowindow.open(map, marker);
-          google.maps.event.addListener(map, "click", function (event) {
-            infowindow.close()
-          })
-        })
-        // marker.addListener('mouseout', function () {
-        //   infowindow.close(map, marker);
-        // });
-      });
-    }
-  </script>
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOlx12fuIZYdiy09_YpJEuFeXU48ORaZ0&callback=initMap">
-  </script>
-</body>
-
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+    <div id='map'></div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDOlx12fuIZYdiy09_YpJEuFeXU48ORaZ0'></script>
+    <script type='module' src='./index.js'></script>
+  </body>
 </html>
