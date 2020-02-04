@@ -46,7 +46,7 @@ const filterDestinations = (category) => {
     marker.setMap(null)
   })
 
-  if (category === 'all') {
+  if (category === 'All') {
     drawDestinations(destinations)
   } else {
     drawDestinations(destinations.filter(destination => destination.category === category))
@@ -54,7 +54,7 @@ const filterDestinations = (category) => {
 }
 
 const drawDestinations = (destinations) => {
-  const categoriesMap = { all: 1 }
+  const categoriesMap = { All: 1 }
   // Create markers.
   destinations.forEach((destination) => {
     categoriesMap[destination.category] = 1
