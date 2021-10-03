@@ -1,126 +1,100 @@
 export const destinations = [
-  // Dakota Haus
+  // Spyglass
   {
     // position: new google.maps.LatLng(34.206667, -116.501538),
-    lat: 34.206667,
-    lng: -116.501538,
-    category: 'Lodging',
-    name: 'Dakota Haus',
-    description: '2 beds 2 baths secluded hot tub',
-    address: 'Unknown',
+    lat: 36.582363,
+    lng: -121.958254,
+    category: 'Golf',
+    name: 'Spyglass Hills',
+    description: '',
+    address: '3206 Stevenson Dr, Pebble Beach, CA 93953, USA',
     // checkIn: '3:00 PM Fri, Feb 7',
-    checkOut: 'Fri, Feb 7',
-    image: 'img/dakotaHaus.jpg'
-    // icon: 'https://static.thenounproject.com/png/5051-200.png',
+    // checkOut: 'Fri, Feb 7',
+    image: 'img/spyglass.jpg',
+    icon: 'img/spyglass-logo.png'
   },
-  // Split Rock
+  // Pasatiempo
   {
-    // position: new google.maps.LatLng(34.1332342, -116.05992850000001),
-    lat: 34.1332342,
-    lng: -116.05992850000001,
+    // position: new google.maps.LatLng(34.206667, -116.501538),
+    lat: 37.004155,
+    lng: -122.025981,
+    category: 'Golf',
+    name: 'Pasatiempo',
+    description: '',
+    address: '20 Clubhouse Rd, Santa Cruz, CA 95060, USA',
+    // checkIn: '3:00 PM Fri, Feb 7',
+    // checkOut: 'Fri, Feb 7',
+    image: 'img/pasatiempo.jpg',
+    icon: 'img/pasatiempo-logo.png'
+  },
+  // Poppy Hills
+  {
+    // position: new google.maps.LatLng(34.206667, -116.501538),
+    lat: 36.582361,
+    lng: -121.938425,
+    category: 'Golf',
+    name: 'Poppy Hills',
+    description: '',
+    address: '3200 Lopez Rd, Pebble Beach, CA 93953, USA',
+    // checkIn: '3:00 PM Fri, Feb 7',
+    // checkOut: 'Fri, Feb 7',
+    image: 'img/poppy-hills.jpg',
+    icon: 'img/poppy-hills-logo.png'
+  },
+  // Santa Cruze Beach Boardwalk
+  {
+    // position: new google.maps.LatLng(34.206667, -116.501538),
+    lat: 36.963985,
+    lng: -122.019292,
+    category: 'Photography',
+    name: 'Santa Cruz Beach Boardwalk',
+    description: '',
+    address: '400 Beach St, Santa Cruz, CA 95060, USA',
+    // checkIn: '3:00 PM Fri, Feb 7',
+    // checkOut: 'Fri, Feb 7',
+    image: 'img/santa-cruz-boardwalk.png',
+    icon: 'img/santa-cruz-boardwalk-logo.png'
+  },
+  // Walton Lighthouse
+  {
+    // position: new google.maps.LatLng(34.206667, -116.501538),
+    lat: 36.960682,
+    lng: -122.002208,
+    category: 'Photography',
+    name: 'Walton Lighthouse',
+    description: '',
+    address: 'E Cliff Dr, Santa Cruz, CA 95062, USA',
+    // checkIn: '3:00 PM Fri, Feb 7',
+    // checkOut: 'Fri, Feb 7',
+    image: 'img/walton-lighthouse.png',
+    icon: 'img/walton-lighthouse-logo.png'
+  },
+  // Lone Cypress
+  {
+    // position: new google.maps.LatLng(34.206667, -116.501538),
+    lat: 36.569462,
+    lng: -121.965150,
+    category: 'Photography',
+    name: 'Lone Cypress',
+    description: '',
+    address: 'Pebble Beach, CA 93953',
+    // checkIn: '3:00 PM Fri, Feb 7',
+    // checkOut: 'Fri, Feb 7',
+    image: 'img/lone-cypress.png',
+    icon: 'img/lone-cypress-logo.png'
+  },
+  // Hilton Santa Cruz
+  {
+    // position: new google.maps.LatLng(34.206667, -116.501538),
+    lat: 37.035875,
+    lng: -122.024304,
     category: 'Lodging',
-    name: 'Split Rock',
-    description: 'Near Joshua Tree National Park w/ Spa',
-    address: '6627 Split Rock Ave, Twentynine Palms, CA 92277, USA',
-    checkIn: '3:00 PM Fri, Feb 7',
-    checkOut: '11:00 AM Mon, Feb 10',
-    image: 'img/splitRock.jpg'
-    // icon: 'https://static.thenounproject.com/png/5051-200.png',
-  },
-  // Skull Rock
-  {
-    // position: new google.maps.LatLng(33.998075, -116.059410),
-    lat: 33.998075,
-    lng: -116.059410,
-    category: 'Photography',
-    name: 'Skull Rock',
+    name: 'Hilton Santa Cruz',
     description: '',
-    address: 'Twentynine Palms, CA 92277',
-    icon: 'https://static.thenounproject.com/png/5051-200.png',
-    image: 'img/skullRock.jpeg'
+    address: '6001 La Madrona Dr, Santa Cruz, CA 95060, USA',
+    // checkIn: '3:00 PM Fri, Feb 7',
+    // checkOut: 'Fri, Feb 7',
+    image: 'img/hilton-santa-cruz.jpg',
+    icon: 'img/hilton-logo.png'
   },
-  // Arch Rock
-  {
-    // position: new google.maps.LatLng(33.989785, -116.022972),
-    lat: 33.989785,
-    lng: -116.022972,
-    category: 'Photography',
-    name: 'Arch Rock',
-    description: '',
-    address: '33.989785, -116.022972',
-    icon: 'https://cdn3.iconfinder.com/data/icons/minimal-national-park/256/minimal_national_park_1-512.png',
-    image: 'img/archRock.jpeg'
-  },
-  // Jumbo Rocks
-  {
-    // position: new google.maps.LatLng(33.992029, -116.062337),
-    lat: 33.992029,
-    lng: -116.062337,
-    category: 'Photography',
-    name: 'Jumbo Rocks',
-    description: 'Jumbo Rocks Campground',
-    address: 'Twentynine Palms, CA 92277',
-    icon: 'https://cdn3.iconfinder.com/data/icons/nature-life-line-art/128/rock-512.png',
-    image: 'img/jumboRocks.jpeg'
-  },
-  // Barkder Dam
-  {
-    // position: new google.maps.LatLng(34.031035, -116.146322),
-    lat: 34.031035,
-    lng: -116.146322,
-    category: 'Photography',
-    name: 'Barkder Dam',
-    description: 'Dam',
-    address: 'Joshua Tree Parkway, Twentynine Palms, CA 92277',
-    icon: 'https://cdn2.iconfinder.com/data/icons/holidays-one/30/Lakes-512.png',
-    image: 'img/barkderDam.jpeg'
-  },
-  // Cholla Cactus Garden Trail
-  {
-    // position: new google.maps.LatLng(34.031035, -116.146322),
-    lat: 33.925516,
-    lng: -115.928877,
-    category: 'Hike',
-    name: 'Cholla Cactus Garden Trail',
-    description: 'Short hike through cholla cactus, aka "teddy bear" cactus, for its fuzzy-looking (but sharp) spines.',
-    address: '1810 W Orange Ave, El Centro, CA 92243',
-    icon: 'https://cdn1.iconfinder.com/data/icons/cactuses-kawaii-linear-outline/300/205432988-8-512.png',
-    image: 'img/chollaCactusGarden.jpeg'
-  },
-  // Geology Tour Road
-  {
-    // position: new google.maps.LatLng(34.031035, -116.146322),
-    lat: 33.929645,
-    lng: -116.065158,
-    category: 'Drive',
-    name: 'Geology Tour Road',
-    description: '',
-    address: 'Geology Tour Road',
-    icon: 'https://cdn.onlinewebfonts.com/svg/img_546773.png',
-    image: 'img/geologyTour.jpg'
-  },
-  // Keys View
-  {
-    // position: new google.maps.LatLng(34.031035, -116.146322),
-    lat: 33.926843,
-    lng: -116.187215,
-    category: 'Photography',
-    name: 'Keys View',
-    description: `Joshua Tree's highest viewpoint, offering panoramic views of mesas, mountains & Coachella Valley.`,
-    address: 'Salton View Rd Desert Hot Springs, CA 92241',
-    icon: 'https://cdn1.iconfinder.com/data/icons/outdoors-recreation/24/person-outdoor-point-landmarks-recreation-telescope-view-overlook-interest-512.png',
-    image: 'img/keysView.jpeg'
-  },
-  // Wall Street Mill
-  {
-    // position: new google.maps.LatLng(34.031035, -116.146322),
-    lat: 34.036815,
-    lng: -116.133964,
-    category: 'Photography',
-    name: 'Wall Street Mill',
-    description: 'Historical place',
-    address: 'Twentynine Palms, CA 92277',
-    icon: 'https://cdn4.iconfinder.com/data/icons/photo-illustration-categories-1/512/themes_0016-512.png',
-    image: 'img/wallStreetMill.jpg'
-  }
 ]

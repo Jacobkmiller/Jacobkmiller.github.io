@@ -16,8 +16,8 @@ const initMap = () => {
 
   map = new google.maps.Map(
     mapDiv, {
-      center: new google.maps.LatLng(33.8734, -115.9010),
-      zoom: 10,
+      center: new google.maps.LatLng(36.800741, -121.947311),
+      zoom: 10.3,
       gestureHandling: 'greedy',
       styles: styles
     }
